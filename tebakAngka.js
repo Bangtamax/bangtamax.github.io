@@ -13,7 +13,10 @@ while ((tanya = true && ronde <= 3)) {
   let hasil = "";
 
   // rules
-  if (player1 == null && player2 == null) {
+
+  if (player1 < 1 || player2 > 3) {
+    hasil = "Input yang anda masukkan salah \nAngka yang dimasukkan harus 1 sd 3";
+  } else if (player1 == null && player2 == null) {
     hasil = "SAYA TANYA. KALIAN NIAT MAEN GAK SIH???";
   } else if ((player1 = null || player2 == null)) {
     hasil = "ERROR! karena salah satu ada yang masukin angka";
